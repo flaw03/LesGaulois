@@ -1,4 +1,7 @@
-package personnages;
+package histoire;
+
+import personnages.Gaulois;
+import personnages.Romain;
 
 public class scenario {
 
