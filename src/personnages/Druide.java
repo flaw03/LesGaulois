@@ -1,7 +1,10 @@
 package personnages;
 
+import java.util.Random;
+
 public class Druide {
 	private String nom;
+	private int forcePotion = 1;
 	private int effetPotionMin;
 	private int effetPotionMax;
 	
@@ -23,6 +26,10 @@ public class Druide {
 		System.out.println(prendreParole() + "\"" + texte + "\""  );
 		// TODO Auto-generated method stub
 		
+	}
+
+	public void preparerPotion(int effetPotionMax){
+		Random()
 	}
 
 	private String prendreParole() {
