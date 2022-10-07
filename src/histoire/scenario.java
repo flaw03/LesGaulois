@@ -12,6 +12,7 @@ public class scenario {
 		panoramix.preparerPotion();
 		panoramix.booster(Obélix);
 		Obélix.parler("Par Bélénos, ce n'est pas juste");
+		
 		panoramix.booster(asterix);
 		asterix.parler("bonjour a tous");
 		minus.parler("Un Gau ..... UN GauGau");
