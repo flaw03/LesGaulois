@@ -11,8 +11,6 @@ public enum Equipement {
 	}
 	
 	public String toString() {
-		return nom;
-		
+		return nom;	
 	}
-
 }
