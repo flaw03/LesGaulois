@@ -13,7 +13,7 @@ public class Village {
 		villageois = new Gaulois[nbVillageoisMaximum];	
 	}
 	
-	public void setchef(Chef chef) {
+	public void setChef(Chef chef) {
 		this.chef = chef; 
 		
 	}
@@ -40,9 +40,7 @@ public class Village {
 		return nom;
 	}
 	
-	public void setChef(Chef chef) {
-		this.chef = chef;
-	}
+
 	
 	public void afficherVillageois() {
 		System.out.println(chef.getNom());
