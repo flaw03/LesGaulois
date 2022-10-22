@@ -13,13 +13,13 @@ public class Trophee {
 		return equipement;
 	}
 	
-	public Gaulois getGauloi() {
+	public Gaulois getGaulois() {
 		return gaulois;
 	}
 	
 
-	public void donnerNom() {
-		gaulois.getNom();
+	public String donnerNom() {
+		return gaulois.getNom();
 	}
 }
 

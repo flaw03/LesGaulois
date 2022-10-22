@@ -32,6 +32,12 @@ public class Romain {
 
 	}
 
+	@Override
+	public String toString() {
+		return "Romain [nom = " + nom + ", force = " + force +"]";
+		
+	}
+
 	/*
 	 * public void recevoirCoup(int forceCoup) { assert force > 0; int f = force;
 	 * force -= forceCoup; if (force > 0 ) { parler("Aie"); } else {
@@ -46,7 +52,7 @@ public class Romain {
 		assert force > 0;
 		int oldForce = force;
 		forceCoup = calculResistanceEquipement(forceCoup);
-		force += forceCoup;
+		force -= forceCoup;
 		if (force >= 0) {
 			parler("Aïe");
 		} else {
@@ -74,7 +80,11 @@ public class Romain {
 			texte += resistanceEquipement + "!";
 		}
 		parler(texte);
+		int oldForceCoup = forceCoup;
 		forceCoup -= resistanceEquipement;
+		if (forceCoup <=0){
+			forceCoup = 0;
+		}
 		return forceCoup;
 	}
 
